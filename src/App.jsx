@@ -1,95 +1,96 @@
-import Card from './components/Card'
 
+import Card from "./components/Card"
 function App(){
 
-return<section className='pricing py-5'>
-        <div className='container'>
-            <div className="row">
-    <div className="col-lg-4">
-        <div className='card mb-5 mb-lg-0'>
-            <div className='card-body'>
-                <h5 className="card-title text-muted text-uppercase text-center">FREE</h5>
-                <h6 className="card-price text-center">$0<span className="period">/month</span></h6>
-                <hr/>
-                <ul className='fa-ul'>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>Single User</li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>5GB Storage</li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>Community Access</li>
-                  <li className="text-muted"><span className='fa-li'><i className="fas fa-times"></i></span>Unlimited Private Projects</li>
-                  <li className="text-muted"><span className='fa-li'><i className="fas fa-times"></i></span>Dedicated Phone Support</li>
-                  <li className="text-muted"><span className='fa-li'><i className="fas fa-times"></i></span>Free Subdomain</li>
-                  <li className="text-muted"><span className='fa-li'><i className="fas fa-times"></i></span>Monthly Status Reports</li>
-                </ul>
-                  
-                  <div className='d-grid'> 
-                    <a href="#" className='btn btn-primary text-uppercase'>Button</a>
-                  </div>
-            </div>
-            
-        </div>
-        
-        </div>
-        <div className="col-lg-4">
-        <div className='card mb-5 mb-lg-0'>
-            <div className='card-body'>
-                <h5 className="card-title text-muted text-uppercase text-center">plus</h5>
-                <h6 className="card-price text-center">$9<span className="period">/month</span></h6>
-                <hr/>
-                <ul className='fa-ul'>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span><b>5 User</b></li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>50GB Storage</li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>Community Access</li>
-                  <li ><span className='fa-li'><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
-                  <li ><span className='fa-li'><i className="fas fa-check"></i></span>Dedicated Phone Support</li>
-                  <li ><span className='fa-li'><i className="fas fa-check"></i></span>Free Subdomain</li>
-                  <li className="text-muted"><span className='fa-li'><i className="fas fa-times"></i></span>Monthly Status Reports</li>
-                </ul>
-                  
-                  <div className='d-grid'> 
-                    <a href="#" className='btn btn-primary text-uppercase'>Button</a>
-                  </div>
-            </div>
-            
-        </div>
-        
-        </div>
-        <div className="col-lg-4">
-        <div className='card mb-5 mb-lg-0'>
-            <div className='card-body'>
-                <h5 className="card-title text-muted text-uppercase text-center">pro</h5>
-                <h6 className="card-price text-center">$49<span className="period">/month</span></h6>
-                <hr/>
-                <ul className='fa-ul'>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span><b>Unlimited Users</b></li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>150GB Storage</li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span className='fa-li'><i className="fas fa-check"></i></span>Community Access</li>
-                  <li ><span className='fa-li'><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
-                  <li ><span className='fa-li'><i className="fas fa-check"></i></span>Dedicated Phone Support</li>
-                  <li ><span className='fa-li'><i className="fas fa-check"></i></span><b>Unlimited</b> Free Subdomain</li>
-                  <li ><span className='fa-li'><i className="fas fa-check"></i></span>Monthly Status Reports</li>
-                </ul>
-                  
-                  <div className='d-grid'> 
-                    <a href="#" className='btn btn-primary text-uppercase'>Button</a>
-                  </div>
-            </div>
-            
-        </div>
-        
-        </div>
+
+  const cardData=[
+    {
+    package:"FREE",
+    value:"$0",
+    duration:"/month",
+    user:"Single User",
+    isUser:true,
+    storage:"50GB Storage",
+    isStorage:true,
+    PublicProjects:"Unlimited Public Projects",
+    isPublicProjects:true,
+    access:"Community Access",
+    isAccess:true,
+    PrivateProjects:"Unlimited Private Projects",
+    isPrivateProjects:false,
+    support:"Dedicated Phone Support",
+    isSupport:false,
+    subdomain:"Free Subdomain",
+    isSubdomain:false,
+    reports:"Monthly Status Reports",
+    isreports:false
+    
+  },
+  {
+    package:"PLUS",
+    value:"$9",
+    duration:"/month",
+    user:"5 Users",
+    isUser:true,
+    storage:"50GB Storage",
+    isStorage:true,
+    PublicProjects:"Unlimited Public Projects",
+    isPublicProjects:true,
+    access:"Community Access",
+    isAccess:true,
+    PrivateProjects:"Unlimited Private Projects",
+    isPrivateProjects:true,
+    support:"Dedicated Phone Support",
+    isSupport:true,
+    subdomain:"Free Subdomain",
+    isSubdomain:true,
+    reports:"Monthly Status Reports",
+    isreports:false
+    
+    
+  },
+  {
+    package:"PRO",
+    value:"$49",
+    duration:"/month",
+    user:"Unlimited Users",
+    isUser:true,
+    storage:"50GB Storage",
+    isStorage:true,
+    PublicProjects:"Unlimited Public Projects",
+    isPublicProjects:true,
+    access:"Community Access",
+    isAccess:true,
+    PrivateProjects:"Unlimited Private Projects",
+    isPrivateProjects:true,
+    support:"Dedicated Phone Support",
+    isSupport:true,
+    subdomain:"Free Subdomain",
+    isSubdomain:true,
+    reports:"Monthly Status Reports",
+    isreports:true
+    
+  }
+]
+
+return<>
+
+<section className="pricing py-5">
+  <div className="container">
+    <div className="row">
+ 
+{
+  cardData.map((e,i)=>{
+    return <Card data={e} key={i}/>
+  })
+
+  }
+
     </div>
-    </div>
-    </section>
+  </div>
+</section>
 
-
-
-
-
-
-
+</>
 
 
 }
