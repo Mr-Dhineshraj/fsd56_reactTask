@@ -5,7 +5,7 @@ function Card({data}) {
     <div className='col-lg-4'>
   <div className='card'>
     <div className="card-body">
-      <p className='text-center'>{data.package}</p>
+      <p className='text-center'><strong className='text-muted'>{data.package}</strong></p>
       <h2 className='text-center'>{data.value}{data.duration}</h2>
       <hr />
       <ul className='fa-ul'>
@@ -19,7 +19,7 @@ function Card({data}) {
         <li className={data.isreports?"":'text-muted'}><span className='fa-li'><i className={data.isreports?"fas fa-check":'fas fa-times'}></i></span>{data.reports}</li>
       </ul>
       <div className='d-grid'>
-        <a href="#" className='btn btn-primary text-uppercase'>button</a>
+        <a href="#" className={data.isreports?"btn btn-primary text-uppercase":'btn btn-primary text-uppercase disabled'} >button</a>
       </div>
       </div>
   </div>
