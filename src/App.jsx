@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./components/Card";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -9,7 +9,7 @@ function App() {
     {
       item: "Fancy Product",
       isItem: false,
-      price: "$40.00 - 80.00",
+      price: "$40.00 - $80.00",
       btn: "View options",
     },
     {
@@ -43,13 +43,14 @@ function App() {
       isStatus: false,
       price: " $25.00",
       errPrice: "$50.00",
-      btn: "View options",
+      btn: "Add to cart",
     },
     {
       item: "Fancy Product",
       isItem: false,
       price: "$120.00 - $280.00",
-      btn: "Add to cart",
+      btn: "View options",
+      
     },
     {
       item: "Special Item",
@@ -67,9 +68,11 @@ function App() {
       btn: "Add to cart",
     },
   ];
+
+  let [cart,setCart]=useState(0)
   return (
     <>
-      <Navbar />
+      <Navbar  cart={cart} setCart={setCart}/>
       <Header />
 
       <section className="py-5">
@@ -78,7 +81,7 @@ function App() {
           {
           data.map((e, i) => {
             return <>
-            <Card cardData={e} key={i} />
+            <Card cardData={e} key={i} cart={cart} setCart={setCart} />
             </>
 })
           }

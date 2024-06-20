@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar() {
+function Navbar({cart,setCart}) {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light ">
@@ -63,13 +63,13 @@ function Navbar() {
                 </ul>
               </li>
             </ul>
-            <form className="d-flex">
-              <button className="btn btn-outline-dark">
+           <form>
+              <button className="btn btn-outline-dark" onClick={()=>{setCart(0)}}>
                 <i className="bi-cart-fill me-1"></i>
                 Cart
-                <span className="badge bg-dark text-white ms-1 rounded-pill"></span>
+                <span className="badge bg-dark text-white ms-1 rounded-pill">{cart}</span>
               </button>
-            </form>
+          </form>
           </div>
         </div>
       </nav>

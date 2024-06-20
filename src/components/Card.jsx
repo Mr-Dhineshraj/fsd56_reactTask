@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Card({cardData}) {
+function Card({cardData,cart,setCart}) {
+
+  let [toggle,setToggle]=useState(true)
+
+
   return (
     
   <div className="col mb-5">  
@@ -21,9 +25,20 @@ function Card({cardData}) {
               {cardData.price}
           </div>
       </div>
+      <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+        {
+         cardData.btn==="Add to cart"?(
+        toggle?(<div className='text-center'><button className='btn btn-outline-dark mt-auto' onClick={()=>{setCart(cart+1)
+          setToggle(false)}}>{cardData.btn}</button></div>):(<div className='text-center'><button className='btn btn-outline-dark mt-auto' onClick={()=>{setCart(cart-1)
+            setToggle(true)
+          }}>Remove to Cart</button></div>
+        )
+        ):(<div className='text-center'><button className='btn btn-outline-dark mt-auto'>{cardData.btn}</button>  </div>
+        )}
+      </div>
       </div>
 </div>
-  )
+  );
 }
 
 export default Card
