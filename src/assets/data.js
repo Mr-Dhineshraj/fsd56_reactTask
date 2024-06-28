@@ -1,7 +1,7 @@
 
 export const fsddata = [
     {
-      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/07/person-front-computer-working-html.jpg",
+      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/07/person-front-computer-working-html.webp",
       headline: "Best Full-Stack-Developement project idea in 2024"
     },
     {
@@ -9,27 +9,27 @@ export const fsddata = [
       headline: "How Long Would it Take To Be a Full Stack Developer"
     },
     {
-      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/02/1_6rDcIgFJQldloIERiUSmzw-768x317.png",
+      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/02/1_6rDcIgFJQldloIERiUSmzw-768x317.webp",
       headline: "How does Apache work? A detailed introduction to Apache"
     },
     {
-      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/02/DBMS1.png",
+      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/02/DBMS1.webp",
       headline: "10 Best Database Management Systems for Software Developers"
     },
     {
-      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2021/09/Full-Stack-Developer-course-syllabus.png",
+      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2021/09/Full-Stack-Developer-course-syllabus.webp",
       headline: "Hot Topics That You Need To Know In Full Stack Developer Syllabus|2024"
     },
     {
-      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/07/html-css-collage-concept-with-person-768x512.jpg",
+      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/07/html-css-collage-concept-with-person-768x512.webp",
       headline: "Top 10 Full Stack Developer Frameworks in 2024"
     },
     {
-      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2021/05/react-600x314.jpg",
+      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2021/05/react-600x314.webp",
       headline: "6 Essential Prerequisites For Learning ReactJS"
     },
     {
-      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/03/1.jpg",
+      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2023/03/1.webp",
       headline: "Best Web Developement Roadmap for Beginners 2024"
     },
     {
@@ -41,7 +41,7 @@ export const fsddata = [
       headline: "Full Stack Developer Roadmap: A complete Guide [2024]"
     },
     {
-      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2024/04/10-Best-React-Project-Ideas-for-Developers-with-Source-Code-768x298.png",
+      imgLink: "https://www.guvi.in/blog/wp-content/uploads/2024/04/10-Best-React-Project-Ideas-for-Developers-with-Source-Code-768x298.webp",
       headline: "10 Best React Project Ideas for Developers[with Source Code]"
     }
   ];

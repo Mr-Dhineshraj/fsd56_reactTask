@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     element: <Cyber csdata={csdata} />
   },
   {
-    path: "/career",
+    path: "/cloudcomputing",
     element: <Cloud clouddata={clouddata} />
   },
   {
