@@ -1,43 +1,14 @@
 import React from 'react';
-import './index.css';
-import Home from './components/Home.jsx';
-import Cloud from './components/Cloud.jsx';
-import Cyber from "./components/Cyber.jsx";
-import FSD from "./components/FSD.jsx";
-import DataScience from "./components/DataScience.jsx";
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { fsddata,csdata,dsdata,clouddata } from './assets/data.js';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+import Cartpage from './components/Cartpage';
 
-
-
-
-
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home/>
-  },
-  {
-    path: "/fullstackdevelopment",
-    element: <FSD data={fsddata} />
-  },
-  {
-    path: "/cybersecurity",
-    element: <Cyber csdata={csdata} />
-  },
-  {
-    path: "/cloudcomputing",
-    element: <Cloud clouddata={clouddata} />
-  },
-  {
-    path: "/datascience",
-    element: <DataScience dsdata={dsdata} />
-  }
-]);
-
-function App() {
-  return <RouterProvider router={router} />;
-}
+const App = () => {
+  return (
+    <Provider store={store}>
+      <Cartpage />
+    </Provider>
+  );
+};
 
 export default App;
