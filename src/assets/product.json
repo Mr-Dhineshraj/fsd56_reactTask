@@ -11,7 +11,7 @@
             "stock": 94,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+            "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRxJ8a7W_6cAhusfiOupVW8kZaJ0T1OzELX-s5AG5IqE6FcaKw0WP2W0A5UtHvtnigMz0wz6AiOnfrN2SdCaMJJaPVz8Ho1j0i-ZTHywBhljTyiNHSlstqFsg&usqp=CAE",
             "images": [
                 "https://i.dummyjson.com/data/products/1/1.jpg",
                 "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -30,7 +30,7 @@
             "stock": 34,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+            "thumbnail": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg",
             "images": [
                 "https://i.dummyjson.com/data/products/2/1.jpg",
                 "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -48,7 +48,7 @@
             "stock": 36,
             "brand": "Samsung",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+            "thumbnail": "https://admin.hyperce.io/assets/thumbnail__12__preview.jpg?w=800",
             "images": [
                 "https://i.dummyjson.com/data/products/3/1.jpg"
             ]
@@ -63,7 +63,7 @@
             "stock": 123,
             "brand": "OPPO",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+            "thumbnail": "https://fdn2.gsmarena.com/vv/pics/oppo/oppo-f19-0.jpg",
             "images": [
                 "https://i.dummyjson.com/data/products/4/1.jpg",
                 "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -82,7 +82,7 @@
             "stock": 32,
             "brand": "Huawei",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+            "thumbnail": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p30-lite-2.jpg",
             "images": [
                 "https://i.dummyjson.com/data/products/5/1.jpg",
                 "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -91,5 +91,3 @@
         }
     ]
 }
-product.json
-Displaying product.json.
