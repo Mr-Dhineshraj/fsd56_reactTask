@@ -1,12 +1,13 @@
 import React from 'react';
 import './index.css';
+import Navbar from './components/Navbar.jsx';
 import Home from './components/Home.jsx';
 import Cloud from './components/Cloud.jsx';
 import Cyber from "./components/Cyber.jsx";
 import FSD from "./components/FSD.jsx";
-import DataScience from "./components/DataScience.jsx";
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { fsddata,csdata,dsdata,clouddata } from './assets/data.js';
+import DataScienece from './components/DataScience.jsx';
+import coursesData from './assets/courses.json'
 
 
 
@@ -16,24 +17,31 @@ import { fsddata,csdata,dsdata,clouddata } from './assets/data.js';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>
+    element: <Navbar/>,
+    children:[
+      {
+        path: "all",
+        element: <Home alldata={coursesData.allData}/>
+      },
+      {
+        path: "fullstackdevelopment",
+        element: <FSD fsddata={coursesData.fsddata}/>
+      },
+      {
+        path: "datascience",
+        element: <DataScienece dsdata={coursesData.dsdata}/>
+      },
+      {
+        path: "cybersecurity",
+        element: <Cyber csdata={coursesData.csdata}/>
+      },
+      {
+        path: "cloudcomputing",
+        element: <Cloud clouddata={coursesData.clouddata}/>
+      },
+    ]
   },
-  {
-    path: "/fullstackdevelopment",
-    element: <FSD data={fsddata} />
-  },
-  {
-    path: "/cybersecurity",
-    element: <Cyber csdata={csdata} />
-  },
-  {
-    path: "/cloudcomputing",
-    element: <Cloud clouddata={clouddata} />
-  },
-  {
-    path: "/datascience",
-    element: <DataScience dsdata={dsdata} />
-  }
+  
 ]);
 
 function App() {
