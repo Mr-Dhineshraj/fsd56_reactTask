@@ -1,13 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function MyTodo() {
   return (
-    
-      <div className='col-6 d-flex-start'>
-<h5>My Todo</h5>
-      </div> 
-     
-  )
+    <div className="col-12">
+      <h2>My Todo List</h2>
+    </div>
+  );
 }
 
-export default MyTodo
+export default MyTodo;
